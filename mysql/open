@@ -2,7 +2,7 @@
 .venv\Scripts\activate
 pip install paho-mqtt pymongo mysql-connector-python neo4j  # installation of python libraries using pip
 
-# Creation of mongodb container in Docker
+# Creation of mysql container in Docker
 docker build -t my-MySQL
 docker run -d --name mysql_instance -p 3310:3306 -e MYSQL_ROOT_PASSWORD=password my-MySQL
 
