@@ -1,0 +1,10 @@
+# First of all we have to create virtual environment. Then:
+.venv\Scripts\activate
+pip install paho-mqtt pymongo mysql-connector-python neo4j  # installation of python libraries using pip
+
+# Creation of mongodb container in Docker
+docker build -t my-mongodb
+docker run -d --name mongo_instance -p 27017:27017 my-mongodb
+
+docker start mongo_instance   # start container
+docker stop mongo_instance   # stop container
