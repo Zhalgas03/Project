@@ -1,0 +1,10 @@
+# First of all we have to create virtual environment. Then:
+.venv\Scripts\activate
+pip install paho-mqtt pymongo mysql-connector-python neo4j  # installation of python libraries using pip
+
+# Creation of neo4j container in Docker
+docker build -t my-neo4j
+docker run -d --name neo4j_instance -p 7687:7687 -p 7474:7474 my-neo4j
+
+docker start neo4j_instance   # start container
+docker stop neo4j_instance   # stop container
