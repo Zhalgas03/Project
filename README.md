@@ -1,6 +1,6 @@
 # Project
 
-1. Introduction
+# Introduction
 Problem Description:
 With the increasing adoption of IoT devices, the amount of data generated has grown exponentially. Efficient systems are necessary for managing and analyzing this big data to extract valuable insights and make informed decisions.
 
